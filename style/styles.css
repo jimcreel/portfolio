@@ -1,75 +1,15 @@
 /* ======= GENERAL ======== */
 body {
-    background: url(https://img.freepik.com/free-photo/empty-elegant-background-with-copy-space_24972-1807.jpg?w=2000&t=st=1677019490~exp=1677020090~hmac=7f6f5234501f49c48a9e617235ec211e482e87d334d516d7347a320901bd3975) center center no-repeat;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url(https://img.freepik.com/free-photo/empty-elegant-background-with-copy-space_24972-1807.jpg?w=2000&t=st=1677019490~exp=1677020090~hmac=7f6f5234501f49c48a9e617235ec211e482e87d334d516d7347a320901bd3975) no-repeat center center fixed;
+    background-size: cover;
 
     height: 100%;
 }
-  
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .container>img {
-    width: 50%;
-  }
+
   
 
   
-  /* ======= CAROUSEL SECTION ======== */
-  .carousel-container {
-    width: 70%;
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .carousel-images {
-    
-    min-width: 587px;
-    background: lightgray;
-    padding: 10px;
-    border-radius: 10px;
-    box-sizing: border-box;
-    box-shadow: 2px 2px darkgray;
-    display: flex;
-    justify-content: center;;
-    
-    
-    
-  }
-  
-  .carousel-images img {
-    
-    border-radius: 10px;
-    display: none;
-    max-height: 400px;
-    
-  }
-  
-  .carousel-images img:first-of-type {
-    display: block;
-  }
-  
-  .carousel-button {
-    align-self: center;
-    background: #f2cd99;
-    color: #888;
-    padding: 10px;
-    border-radius: 50%;
-    text-align: center;
-    box-shadow: 1px 1px #fa8d8e;
-    
-  }
-  
-  .carousel-button:hover {
-    cursor: pointer;
-    background: #fa8d8e;
-    box-shadow: 1px 1px #f2cd99;
-    color: white;
-  }
+
 
 .footer {
     position: fixed;
@@ -82,19 +22,46 @@ body {
     font-size: 1vh;
 }
 
-.about{
-    background-color: darkgray;
-    border-radius: 5px;
-    padding: 40px;
-    font-size: 2vh;
-    box-shadow: 1px 1px black;
-}
-
-.about h1 {
-    font-size: 6vh;
-    text-align: center;
-}
     
 .navbar{
     background-color: rgba(255,255,255,0.3);
+}
+
+.projects {
+    text-align: center;
+    font-weight: bold;
+    font-size: 3vh;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+    padding: 200px;
+    min-height: 100vh;
+    min-width: 100vh;
+    
+}
+ 
+.boxes {
+    display: flex;
+    border: 1px solid black;
+    min-width: 200px;
+    min-height: 200px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.boxes img {
+    width: 20vh;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+.picture-box {
+
 }
