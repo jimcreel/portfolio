@@ -12,11 +12,14 @@
 .main-info {
     flex-direction: column;
     display: block;
+    
 }
 .secondary-info {
     flex-direction: row;
     display: flex;
     padding: 3vh;
+    align-items: flex-end;
+    max-width: 200px;
 
 }
 
