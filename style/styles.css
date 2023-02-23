@@ -7,8 +7,10 @@ body {
 }
 
   .projects {
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
+    width: 80vw;
+    
   }
 
   
@@ -55,10 +57,7 @@ body {
 }
 
 .pics {
-    min-width: 100px;
-    min-height: auto;
-    max-width: 200px;
-    max-height: auto;
+    max-width: 300px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -81,7 +80,7 @@ body {
     align-items: center;
 }
 .boxes img, .pics img {
-    width: 20vh;
+    width: 300px;
     height: auto;
     border-radius: 8px;
     animation: fadeIn 5s;
@@ -103,11 +102,7 @@ a {
     font-weight: bold;
 }
 
-.projects img {
-    min-width: 100px;
-    height: auto;
-    
-}
+
 
 article {
     max-width: 500px;
