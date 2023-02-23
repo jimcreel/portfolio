@@ -1,12 +1,15 @@
 /* ======= GENERAL ======== */
 body {
-    background: url(https://img.freepik.com/free-photo/empty-elegant-background-with-copy-space_24972-1807.jpg?w=2000&t=st=1677019490~exp=1677020090~hmac=7f6f5234501f49c48a9e617235ec211e482e87d334d516d7347a320901bd3975) no-repeat center center fixed;
+    background: url(/img/background.png) no-repeat center center fixed;
     background-size: cover;
 
     height: 100%;
 }
 
-  
+  .projects {
+    justify-content: center;
+    align-items: flex-start;
+  }
 
   
 
@@ -24,44 +27,88 @@ body {
 
     
 .navbar{
-    background-color: rgba(255,255,255,0.3);
+    background-color: rgba(255,255,255,0.1);
 }
 
-.projects {
-    text-align: center;
-    font-weight: bold;
-    font-size: 3vh;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
-}
+
 
 #main {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    border: 1px solid red;
-    padding: 200px;
-    min-height: 100vh;
-    min-width: 100vh;
+    background-color: rgba(239,239,240,0.3);
+    backdrop-filter: blur(20px);
+    min-height: 80vh;
+    
     
 }
  
 .boxes {
-    display: flex;
-    border: 1px solid black;
-    min-width: 200px;
-    min-height: 200px;
+    display: none;
+    min-width: 100px;
+    min-height: auto;
+    max-width: 200px;
+    max-height: auto;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.boxes img {
+.pics {
+    min-width: 100px;
+    min-height: auto;
+    max-width: 200px;
+    max-height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.boxes:first-of-type{
+    display: block;
+}
+
+.picture-box{
+    align-items: center;
+    justify-content: center;
+}
+
+.text-box {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.boxes img, .pics img {
     width: 20vh;
     height: auto;
     border-radius: 8px;
-    border: 1px solid black;
+    animation: fadeIn 5s;
+    box-shadow: 0 0 8px 
 }
-.picture-box {
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.picture-box h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.projects a {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.projects img {
+    min-width: 100px;
+    height: auto;
+    
+}
+
+article {
+    max-width: 500px;
 }
